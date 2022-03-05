@@ -44,7 +44,7 @@ function StringNetFormat(string $source, array $parameters) : string
         print_r($parameters) . PHP_EOL . PHP_EOL;
         throw new Exception($exMessage);
     }
-}
-
-print StringNetFormat("hallo {0}, und {1}, welcher Tag ist heute {2}, {0}{1} - {3}", array ("Wert1", "Wert2", "Wert3"));
+} // StringNetFormat()
+// usage example
+print StringNetFormat("Hallo {0}, {1}, and {2}, ({0}, {1}, {2})", array ("Harry", "Doreen", "Wakka"));
 ?>
